@@ -1,9 +1,3 @@
 {
-    "ROS2.distro": "kilted",
-    "python.autoComplete.extraPaths": [
-        "/opt/ros/kilted/lib/python3.12/site-packages"
-    ],
-    "python.analysis.extraPaths": [
-        "/opt/ros/kilted/lib/python3.12/site-packages"
-    ]
+    "cmake.sourceDirectory": "/home/mrmcmah/git/ROB_574_Final_Project/PX4-Autopilot"
 }
