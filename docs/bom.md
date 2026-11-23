@@ -19,7 +19,7 @@ Measured directly from the MakerWorld STL files (slice/loop analysis, ±0.1 mm):
 | `v2_Batt_Holder` | Battery cross-section | Rectangular tunnel **29 × 18 mm**, open-ended | "Long type" 3S 450 mAh packs (≈17–19 × 19–21 × 63 mm) fit lying flat. |
 | `V2_GPS_AND_fc_holder` + `FC_Holder_Top` | FC size | Bay ≈ **38.5 × 30 mm**, designed around the Matek F405-WMO (32 × 22 mm) | The MicoAir AIO (36 × 36 mm, 25.5 mm holes) **does not fit the stock holder**. Fuselage interior is 71 × 26 mm at mid-body, so the board fits the airframe; the holder part needs a remodel. |
 | `V2_VTX` | Air unit footprint | Built for the DJI O4 Lite (30 × 30 board, 25.5 × 25.5 M2) | Walksnail Mini 1S Lite VTX is 30 × 30 × 6.5, 25.5 × 25.5 — same footprint. |
-| `Front_o4-14mm_*` nose | Camera | Cut for the O4 Lite camera (~13.4 × 12.4 × 16.5 mm) | Walksnail Lite camera is 14 × 14 × 16 mm — expect to open the cutout ~1–2 mm. |
+| `Front_o4-14mm_*` nose | Camera | Cut for the O4 Lite camera (~13.4 × 12.4 × 16.5 mm) | Walksnail Lite camera is 14 × 14 × 16 mm — fits the 14.4 mm cheek-plate gap; mount with `cad/Walksnail_Lite_Cam_Mount.stl` (camera rear PCB holes, 11 mm apart, to the mount with 2× M1.4; mount to nose with 4× M1.4 through the upper/lower nose holes). |
 | `GPS_Holder` / holder GPS pad | GPS module | 4× M2 on 24.5 × 13 mm | HGLRC M100-5883 is 21 × 21 mm; mount with tape/zip tie or add holes. |
 
 ## BOM
@@ -109,7 +109,7 @@ which leaves differential-thrust authority for roll in hover.
 ## Printed parts that need changes for this hardware
 
 1. **`V2_GPS_AND_fc_holder`** — remodel the FC bay for a 36 × 36 mm board on 25.5 × 25.5 holes (stock bay is ~38.5 × 30 mm for the F405-WMO).
-2. **`Front_o4-14mm_*`** — open the camera cutout to ≥ 14 × 14 mm for the Walksnail Lite camera.
+2. **`Front_o4-14mm_*`** — no nose change needed; print `cad/Walksnail_Lite_Cam_Mount.stl` to hold the 14 × 14 mm Walksnail Lite camera.
 3. **`GPS_Holder`** — adapt to the 21 × 21 mm M100-5883, or use tape.
 4. Skip `VTX_Ant_mount` unless the Walksnail antenna (Ø5 × 70 mm) needs it; the O4 and Walksnail antennas differ.
 
